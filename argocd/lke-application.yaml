@@ -20,9 +20,9 @@ spec:
       helm:
         valueFiles:
         - $values/values/lke-values.yaml
-    - repoURL: https://github.com/rmortale/sb-onechart-demo.git
+    - repoURL: https://github.com/rmortale/onechart-demo-cd.git
       ref: values
-      targetRevision: main
+      targetRevision: acpt
   syncPolicy:
     automated:
       prune: true
