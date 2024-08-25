@@ -20,10 +20,9 @@ spec:
       helm:
         valueFiles:
         - $values/values/gke-values.yaml
-        
-    - repoURL: https://github.com/rmortale/sb-onechart-demo.git
+    - repoURL: https://github.com/rmortale/onechart-demo-cd.git
       ref: values
-      targetRevision: v1.0.0
+      targetRevision: prod
   syncPolicy:
     automated:
       prune: true
