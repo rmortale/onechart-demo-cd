@@ -22,7 +22,7 @@ spec:
         - $values/values/lke-values.yaml
     - repoURL: https://github.com/rmortale/onechart-demo-cd.git
       ref: values
-      targetRevision: acpt
+      targetRevision: main
   syncPolicy:
     automated:
       prune: true
