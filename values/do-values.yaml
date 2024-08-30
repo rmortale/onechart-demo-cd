@@ -4,4 +4,4 @@ image:
 
 containerPort: 8080
 vars:
-  VAR_1: "value 3"
+  VAR_1: "value 4"
