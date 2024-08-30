@@ -1,5 +1,5 @@
 image:
   repository: ghcr.io/rmortale/sb-onechart-demo
-  tag: 0be08883fc1422f7ef68cb41039b81d9248e6276
+  tag: 4ac91b016480835f7107349e4e7ad5f29a2912dc
 
 containerPort: 8080
