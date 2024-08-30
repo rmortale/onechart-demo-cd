@@ -3,3 +3,6 @@ image:
   tag: d4b99e70aec38ef298af2bc5d4750a8d3d9d3062
 
 containerPort: 8080
+vars:
+  VAR_1: "value 1"
+  
