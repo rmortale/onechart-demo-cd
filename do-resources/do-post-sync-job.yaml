@@ -11,7 +11,13 @@ spec:
       containers:
       - name: start-workflow
         image: mattermostdevelopment/gh-cli:2.30.0
-        command:
-          - "env"
+        env:
+        - name: GH_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: github-job-token
+              key: token
+        command: ['gh', 'workflow', 'list']
+          
       restartPolicy: Never
   backoffLimit: 1
