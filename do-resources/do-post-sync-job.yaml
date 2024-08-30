@@ -12,7 +12,6 @@ spec:
       - name: start-workflow
         image: mattermostdevelopment/gh-cli:2.30.0
         command:
-          - "gh"
-          - "version"
+          - "env"
       restartPolicy: Never
   backoffLimit: 2
