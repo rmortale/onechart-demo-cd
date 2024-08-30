@@ -17,7 +17,7 @@ spec:
             secretKeyRef:
               name: github-job-token
               key: token
-        command: ['gh', 'workflow', 'list']
-          
+        command: ["/bin/sh"]
+        args: ["-c", "gh repo clone rmortale/sb-onechart-demo && cd sb-onechart-demo && gh workflow list"]
       restartPolicy: Never
   backoffLimit: 1
