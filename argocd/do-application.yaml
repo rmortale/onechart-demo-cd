@@ -22,7 +22,7 @@ spec:
         - $values/values/do-values.yaml
     - repoURL: https://github.com/rmortale/onechart-demo-cd.git
       ref: values
-      path: do-resources
+      #path: do-resources
       targetRevision: main
   syncPolicy:
     automated:
