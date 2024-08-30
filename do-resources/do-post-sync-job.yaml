@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: postsync-job
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    #argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: start-workflow
+        image: mattermostdevelopment/gh-cli:2.30.0
+        command:
+          - "gh"
+          - "workflow"
+          - "list"
+      restartPolicy: Never
+  backoffLimit: 2
